@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Health Record Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Patient Health Record Assistant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="query-section">
+            <h2>Search Patient Records</h2>
+            <form id="query-form">
+                <input type="text" id="query-input" placeholder="Enter your query..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section class="results-section">
+            <h2>Results</h2>
+            <div id="query-display"></div>
+            <div id="results-display"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Patient Health Record Assistant. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

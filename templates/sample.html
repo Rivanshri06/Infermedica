@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Health Record Assistant Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .chat-box {
+            flex: 1;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-box .message {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+            max-width: 75%;
+        }
+
+        .chat-box .message.user {
+            background-color: #d1e7fd;
+            align-self: flex-end;
+        }
+
+        .chat-box .message.bot {
+            background-color: #f1f1f1;
+            align-self: flex-start;
+        }
+
+        .chat-input {
+            display: flex;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+        }
+
+        .chat-input button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            margin: 0 1rem;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Patient Health Record Assistant</h1>
+        </div>
+    </header>
+    <main>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box"></div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Ask a question...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Patient Health Record Assistant. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chatBox = document.getElementById('chat-box');
+            const chatInput = document.getElementById('chat-input');
+            const sendBtn = document.getElementById('send-btn');
+            let awaitingPatientID = false;
+            let storedQuestion = '';
+
+            function addMessage(content, sender) {
+                const message = document.createElement('div');
+                message.classList.add('message', sender);
+                message.innerText = content;
+                chatBox.appendChild(message);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+
+            function sendQuestion(question, patientID = null) {
+                const body = patientID ? { question: storedQuestion, patient_id: patientID } : { question: question };
+                fetch('/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(body),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.response === 'Multiple patients found. Please provide the patient ID.') {
+                        awaitingPatientID = true;
+                        storedQuestion = question;
+                    }
+                    addMessage(data.response, 'bot');
+                });
+            }
+
+            sendBtn.addEventListener('click', function () {
+                const input = chatInput.value.trim();
+                if (input) {
+                    addMessage(input, 'user');
+                    chatInput.value = '';
+                    if (awaitingPatientID) {
+                        sendQuestion(storedQuestion, input);
+                        awaitingPatientID = false;
+                        storedQuestion = '';
+                    } else {
+                        sendQuestion(input);
+                    }
+                }
+            });
+
+            chatInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    sendBtn.click();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1602 @@
+[
+    {
+        "Question": "What is the address of John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has John Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of John Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is John Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were John Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does John Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of John Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for John Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does John Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is John Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was John Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of John Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has John Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"John\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Jane Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Jane Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Jane Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Jane Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Jane Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Jane Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Jane Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Jane Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Jane Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Jane Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Jane Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Jane Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Jane\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Alice Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Alice Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Alice Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Alice Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Alice Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Alice Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Alice Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Alice Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Alice Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Alice Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Alice Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Alice Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Alice\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Bob Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Bob Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Bob Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Bob Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Bob Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Bob Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Bob Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Bob Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Bob Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Bob Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Bob Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Bob Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Bob\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Charlie Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Charlie Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Charlie Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Charlie Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Charlie Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Charlie Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Charlie Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Charlie Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Charlie Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Charlie Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Charlie Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Charlie Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Charlie\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has David Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of David Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is David Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were David Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does David Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of David Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for David Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does David Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is David Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was David Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of David Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has David Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"David\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Eve Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Eve Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Eve Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Eve Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Eve Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Eve Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Eve Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Eve Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Eve Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Eve Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Eve Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Eve Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Eve\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Frank Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Frank Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Frank Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Frank Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Frank Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Frank Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Frank Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Frank Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Frank Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Frank Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Frank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Frank Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Frank\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Grace Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Grace Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Grace Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Grace Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Grace Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Grace Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Grace Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Grace Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Grace Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Grace Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Grace Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Grace Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Grace\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Hank Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Hank Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Hank Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Hank Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Hank Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Hank Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Hank Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Hank Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Hank Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Hank Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Hank Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Hank Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Hank\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Ivy Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Ivy Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Ivy Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Ivy Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Ivy Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Ivy Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Ivy Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Ivy Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Ivy Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Ivy Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Ivy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Ivy Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Ivy\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Jack Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Jack Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Jack Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Jack Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Jack Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Jack Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Jack Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Jack Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Jack Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Jack Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Jack Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Jack Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Jack\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Kathy Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Kathy Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Kathy Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Kathy Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Kathy Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Kathy Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Kathy Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Kathy Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Kathy Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Kathy Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Kathy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Kathy Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Kathy\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Larry Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Larry Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Larry Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Larry Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Larry Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Larry Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Larry Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Larry Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Larry Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Larry Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Larry Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Larry Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Larry\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Mona Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Mona Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Mona Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Mona Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Mona Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Mona Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Mona Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Mona Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Mona Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Mona Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Mona Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Mona Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Mona\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Ned Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Ned Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Ned Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Ned Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Ned Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Ned Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Ned Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Ned Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Ned Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Ned Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Ned Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Ned Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Ned\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Olivia Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Olivia Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Olivia Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Olivia Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Olivia Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Olivia Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Olivia Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Olivia Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Olivia Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Olivia Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Olivia Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Olivia Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Olivia\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Paul Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Paul Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Paul Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Paul Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Paul Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Paul Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Paul Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Paul Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Paul Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Paul Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Paul Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Paul Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Paul\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Quincy Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Quincy Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Quincy Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Quincy Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Quincy Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Quincy Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Quincy Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Quincy Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the blood pressure readings for Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"health_monitoring.daily_vitals\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the blood group of Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"blood_group\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Quincy Smith's contact phone number?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"contact.phone\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the latest vital signs for Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"vital_signs\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the email address of Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"contact.email\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the primary physician of Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"primary_physician\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "When was Quincy Smith's last check-up?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"last_checkup\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the allergies of Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"allergies\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the marital status of Quincy Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"marital_status\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What surgeries has Quincy Smith had in the past?",
+        "Query": "db.patients.find({ \"name.first\": \"Quincy\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the address of Rachel Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"contact.address\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "How many claims has Rachel Smith made, and what are their statuses?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"insurance.claimed_insurance\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What are the details of Rachel Smith's last medical appointment?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What medications is Rachel Smith currently taking, and when did they start?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"medical_history.medications\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What were Rachel Smith's test results on 2024-05-25?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"test_results\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Which conditions does Rachel Smith have, and what is their status?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"medical_history.conditions\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is the insurance provider for Rachel Smith?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"insurance.provider\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What was the outcome of Rachel Smith's last surgery?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"medical_history.surgeries\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "Who is the emergency contact for Rachel Smith, and what is their relationship?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"emergency_contact\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What appointments does Rachel Smith have scheduled?",
+        "Query": "db.patients.find({ \"name.first\": \"Rachel\", \"name.last\": \"Smith\" }, { \"appointments\": 1, \"_id\": 0 })"
+    },
+    {
+        "Question": "What is Kristin Ward's date of birth?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"dob\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "What is the blood group of Kristin Ward?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"blood_group\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "What is Kristin Ward's contact phone number?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"contact.phone\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "Who is Kristin Ward's emergency contact?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"emergency_contact.name\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "What is the address of Kristin Ward?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"contact.address\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "How many claims has Kristin Ward made, and what are their statuses?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"insurance.claimed_insurance\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "What are the details of Kristin Ward's last medical appointment?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"appointments\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "What medications is Kristin Ward currently taking, and when did he start?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"medical_history.medications\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "Which conditions does Kristin Ward have, and what is their status?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"medical_history.conditions\": 1, \"_id\": 0})"
+    },
+    {
+        "Question": "What is the insurance provider for Kristin Ward?",
+        "Query": "db.patients.find({\"name.first\": \"Kristin\", \"name.last\": \"Ward\"}, {\"insurance.provider\": 1, \"_id\": 0})"
+    }
+]
